@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | ZeesuLib</title>
+  <style>
+    /* Reset & Base */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: "Poppins", sans-serif;
+      background: url("b2.jpg") no-repeat center center;
+      background-size: cover;
+      color: #fff;
+    }
+
+    /* Navbar */
+    header {
+      width: 100%;
+      padding: 15px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(255, 255, 255, 0.399);
+      backdrop-filter: blur(12px);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    header h2 {
+      color: #df3d3d;
+      font-size: 1.5rem;
+      font-weight: bold;
+      text-shadow: 0 0 0 3px rgba(0, 9, 8, 0.2);
+    }
+    nav {
+      display: flex;
+      gap: 20px;
+    }
+    nav a {
+      color: #070000;
+      text-decoration: none;
+      font-size: 1rem;
+      transition: 0.3s ease;
+    }
+    nav a:hover {
+      color: #fb3b3bde;
+    }
+
+    /* Hero About Section */
+    .about-hero {
+      text-align: center;
+      padding: 70px 20px;
+    }
+    .about-hero h1 {
+    font-size: 2.8rem;
+    margin-bottom: 15px;
+    color: #f94444dc;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); 
+    }
+    .about-hero p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: auto;
+      line-height: 1.8;
+      color: #100000;
+    }
+
+    /* Mission & Vision */
+    .mission {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      padding: 60px 40px;
+    }
+    .card {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(12px);
+      border-radius: 20px;
+      padding: 30px;
+      text-align: center;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+      transition: 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-10px);
+    }
+    .card h3 {
+      margin-bottom: 15px;
+      color: #ff4242df;
+    }
+    .card p {
+      color: #000000;
+      line-height: 1.6;
+    }
+
+    /* Contact Section */
+    .contact {
+      text-align: center;
+      padding: 70px 20px;
+      background: rgba(255, 255, 255, 0.05);
+    }
+    .contact h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #0a0700;
+    }
+    .contact-info {
+      max-width: 600px;
+      margin: auto;
+      font-size: 1.1rem;
+      line-height: 2;
+      color: #0c0101;
+    }
+    .contact-info a {
+      color: #ff8c42;
+      text-decoration: none;
+      transition: 0.3s ease;
+    }
+    .contact-info a:hover {
+      text-decoration: underline;
+    }
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  background: rgba(255, 255, 255, 0.08); 
+  color: #aaa;
+  backdrop-filter: blur(10px);        
+  -webkit-backdrop-filter: blur(10px);   
+  border-top: 1px solid rgba(255, 255, 255, 0.2); 
+}
+
+
+    /* Responsive Styles */
+    @media (max-width: 1024px) {
+      .about-hero h1 {
+        font-size: 2.2rem;
+      }
+      .about-hero p {
+        font-size: 1rem;
+      }
+    }
+
+    @media (max-width: 768px) {
+      header {
+        padding: 15px 20px;
+      }
+      nav {
+        display: none;
+        flex-direction: column;
+        background: rgba(0,0,0,0.8);
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        padding: 15px;
+        border-radius: 10px;
+      }
+      nav.active {
+        display: flex;
+      }
+      .menu-toggle {
+        display: block;
+        cursor: pointer;
+        font-size: 1.5rem;
+        color: #fff;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .about-hero h1 {
+        font-size: 1.8rem;
+      }
+      .about-hero p {
+        font-size: 0.95rem;
+      }
+      .card {
+        padding: 20px;
+      }
+      .contact h2 {
+        font-size: 1.6rem;
+      }
+      .contact-info {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <h2>ZeesuLib</h2>
+    <div class="menu-toggle">☰</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="https://www.google.com/search?q=zeesu+royalist" target="blank">About</a>
+      <a href="https://www.linkedin.com/in/mohammad-jishan-4361972ba/" target="blank">LinkedIn</a>
+      <a href="https://wa.me/9999736978" target="blank">WhatsApp</a>
+    </nav>
+  </header>
+
+  <!-- About Hero -->
+  <section class="about-hero">
+    <h1>About ZeesuLib</h1>
+    <p>
+      <strong>ZeesuLib</strong> is a premium platform designed for book lovers to 
+      <span style="color:#ff8c42;">discover</span> and 
+      <span style="color:#ff8c42;">download</span> their favorite books in PDF format.  
+      We provide a wide range of categories — from fiction and self-help to science and history — 
+      making knowledge accessible to everyone.
+    </p>
+  </section>
+
+  <!-- Mission & Vision -->
+  <section class="mission">
+    <div class="card">
+      <h3>📖 Our Mission</h3>
+      <p>
+        To empower readers by offering a seamless digital library experience where knowledge 
+        and imagination meet accessibility.
+      </p>
+    </div>
+    <div class="card">
+      <h3>🌍 Our Vision</h3>
+      <p>
+        To become the go-to digital platform for global readers who want to explore, 
+        learn, and grow through books of all genres.
+      </p>
+    </div>
+  </section>
+
+  <hr>
+  <!-- Contact Info -->
+  <section class="contact">
+    <h2>Contact Us</h2>
+    <div class="contact-info">
+      📧 Email: <a href="mailto:rzeesu@gmail.com" target="blank">rzeesu@gmail.com</a><br>
+      📞 Phone: +91 9999730618<br>
+      📍 Address: Kalka ji, New Delhi, India<br>
+      🌐 Website: <a href="https://zeesu-royalist.github.io" target="blank">www.zeesuroyalist.com</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    © 2025 ZeesuLib | All Rights Reserved
+    <p style="margin-top:10px;font-style:italic;font-size:10px;color:#0000007b;">
+  Powered by The 
+  <a href="https://www.google.com/search?q=zeesu+royalist" style="text-decoration:none;color:#0000007b;">
+    Zeesu Royalist Company
+  </a>
+</p>
+  </footer>
+
+  <!-- Mobile Menu Script -->
+  <script>
+    const menuToggle = document.querySelector(".menu-toggle");
+    const nav = document.querySelector("nav");
+    menuToggle.addEventListener("click", () => {
+      nav.classList.toggle("active");
+    });
+  </script>
+
+</body>
+</html>

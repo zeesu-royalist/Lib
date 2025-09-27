@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZeesuLib</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+        
+</head>
+<body>
+    <!-- Header with Navbar -->
+    <header>
+        <nav class="navbar">
+            <a href="#" class="logo">
+                <span>ZeesuLib</span>
+            </a>
+            
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Categories</a></li>
+                <li><a href="#">Dictionary</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="https://www.google.com/search?q=zeesu+royalist" target="blank">Contact</a></li>
+            </ul>
+            
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Search for books...">
+                <button id="searchButton"><i class="fas fa-search"></i></button>
+            </div>
+            
+            <div class="user-actions">
+                <a href="#"><i class="fas fa-bell"></i><span class="notification-count">3</span></a>
+                <a href="https://www.google.com/search?q=zeesu+royalist" target="blank"><i class="fas fa-user"></i></a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Download & Read<br>Your Favourite Book<br>Online</h1>
+                <p>Access over 5000 eBooks in various genres. Download instantly in PDF format and enjoy reading anywhere, anytime.</p>
+                <div class="hero-buttons">
+                    <a href="https://www.linkedin.com/in/mohammad-jishan-4361972ba/" target="blank" class="btn btn-primary"><i class="fas fa-book-open"></i> Explore Library</a>
+                    <a href="https://www.instagram.com/zeesu_royalist/" target="blank" class="btn btn-secondary"><i class="fas fa-user-plus"></i> Join Free</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="Zeesu.png" alt="Stack of books">
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h3><i class="fas fa-list"></i> Categories</h3>
+            <ul class="categories">
+                <li><a href="#" class="category-link active" data-category="all"><i class="fas fa-globe"></i> All Books <span class="count">600</span></a></li>
+                <li><a href="#" class="category-link" data-category="fiction"><i class="fas fa-feather-alt"></i> Fiction <span class="count">128</span></a></li>
+                <li><a href="#" class="category-link" data-category="sci-fi"><i class="fas fa-rocket"></i> Science Fiction <span class="count">86</span></a></li>
+                <li><a href="#" class="category-link" data-category="psychology"><i class="fas fa-brain"></i> Psychology <span class="count">54</span></a></li>
+                <li><a href="#" class="category-link" data-category="technology"><i class="fas fa-laptop-code"></i> Technology <span class="count">142</span></a></li>
+                <li><a href="#" class="category-link" data-category="business"><i class="fas fa-chart-line"></i> Business <span class="count">97</span></a></li>
+                <li><a href="#" class="category-link" data-category="history"><i class="fas fa-landmark"></i> History <span class="count">0</span></a></li>
+                <li><a href="#" class="category-link" data-category="romance"><i class="fas fa-heart"></i> Romance <span class="count">0</span></a></li>
+                <li><a href="#" class="category-link" data-category="fantasy"><i class="fas fa-magic"></i> Fantasy <span class="count">0</span></a></li>
+                <li><a href="#" class="category-link" data-category="biography"><i class="fas fa-book"></i> Biography <span class="count">0</span></a></li>
+            </ul>
+        </aside>
+
+        <!-- Main Section -->
+        <main class="main-content">
+            <div class="section-header">
+                <h1 class="page-title">Featured Books</h1>
+                <a href="#" class="view-all">View All <i class="fas fa-arrow-right"></i></a>
+            </div>
+            
+            <div class="books-container" id="booksContainer">
+                <!-- Book Card 1 -->
+                <div class="book-card" data-categories="fiction psychology" data-title="the creative mind" data-author="james peterson">
+                    <div class="book-cover">
+                        <img src="https://inbetweenthepagesofbooks.wordpress.com/wp-content/uploads/2013/02/tumblr_mhg20cxfxp1s3mksfo1_500_large.jpg" alt="Book Cover">
+                    </div>
+                    <div class="book-details">
+                        <h2 class="book-title">The Great Gatsby</h2>
+                        <p class="book-author">By F Scott</p>
+                        <p class="book-description">The Great Gatsby is a 1925 tragedy novel by American writer F. Scott Fitzgerald.</p>
+                        <div class="book-meta">
+                            <div class="book-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span></span>
+                            </div>
+                            <div class="book-pages">
+                                <i class="fas fa-file"></i> 320 pages
+                            </div>
+                        </div>
+                        <a href="#" class="download-btn"><i class="fas fa-download"></i> Download PDF</a>
+                    </div>
+                </div>
+                
+                <!-- Book Card 2 -->
+                <div class="book-card" data-categories="sci-fi technology" data-title="the science of everything" data-author="emily roberts">
+                    <div class="book-cover">
+                        <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT1PqWSokX1vLDssDSKNKXtbno6PpfBffF7Q01uExg0mAvw3nOi" alt="Book Cover">
+                        <span class="book-badge">New</span>
+                    </div>
+                    <div class="book-details">
+                        <h2 class="book-title">Jane Eyre</h2>
+                        <p class="book-author">By Charlotte Brontë.</p>
+                        <p class="book-description">It was published under her pen name "Currer Bell" on 19 October 1847 by Smith,..</p>
+                        <div class="book-meta">
+                            <div class="book-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span></span>
+                            </div>
+                            <div class="book-pages">
+                                <i class="fas fa-file"></i> 450 pages
+                            </div>
+                        </div>
+                        <a href="#" class="download-btn"><i class="fas fa-download"></i> Download PDF</a>
+                    </div>
+                </div>
+                
+                <!-- Book Card 3 -->
+                <div class="book-card" data-categories="business" data-title="business strategy" data-author="michael johnson">
+                    <div class="book-cover">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSd1kRj1nnXtv-dZUhSj2n_xUDvtQFf5MzNXXcZouIU1FU_hY4A" alt="Book Cover">
+                    </div>
+                    <div class="book-details">
+                        <h2 class="book-title">Pride and Prejudice</h2>
+                        <p class="book-author">By Jane Austen.</p>
+                        <p class="book-description">the published novel by English author Jane Austen, written when she was age 20..</p>
+                        <div class="book-meta">
+                            <div class="book-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <span></span>
+                            </div>
+                            <div class="book-pages">
+                                <i class="fas fa-file"></i> 380 pages
+                            </div>
+                        </div>
+                        <a href="#" class="download-btn"><i class="fas fa-download"></i> Download PDF</a>
+                    </div>
+                </div>
+                
+                <!-- Book Card 4 -->
+                <div class="book-card" data-categories="fiction" data-title="art of photography" data-author="sarah williams">
+                    <div class="book-cover">
+                        <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTWOvWV-UtYvY2Qu57SAEGFDMsvxmxU3JjUgPh2_6GgS_6rGUyU" alt="Book Cover">
+                    </div>
+                    <div class="book-details">
+                        <h2 class="book-title">Frankenstein</h2>
+                        <p class="book-author">By Mary Shelley.</p>
+                        <p class="book-description">Frankenstein tells the story of Victor Frankenstein, a young scientist ...</p>
+                        <div class="book-meta">
+                            <div class="book-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span></span>
+                            </div>
+                            <div class="book-pages">
+                                <i class="fas fa-file"></i> 280 pages
+                            </div>
+                        </div>
+                        <a href="#" class="download-btn"><i class="fas fa-download"></i> Download PDF</a>
+                    </div>
+                </div>
+                
+                <!-- Book Card 5 -->
+                <div class="book-card" data-categories="psychology" data-title="healthy lifestyle" data-author="rachel green">
+                    <div class="book-cover">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR819TtvIV0JJ5_Wzzfcnk3y2eXfPpamZmdbrg5ofv0Ydafpw_f" alt="Book Cover">
+                        <span class="book-badge">Popular</span>
+                    </div>
+                    <div class="book-details">
+                        <h2 class="book-title">To Kill Mockingbird</h2>
+                        <p class="book-author">By Harper Lee.</p>
+                        <p class="book-description">1960 Southern Gothic novel by American author Harper Lee. It became instantly...</p>
+                        <div class="book-meta">
+                            <div class="book-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span></span>
+                            </div>
+                            <div class="book-pages">
+                                <i class="fas fa-file"></i> 350 pages
+                            </div>
+                        </div>
+                        <a href="#" class="download-btn"><i class="fas fa-download"></i> Download PDF</a>
+                    </div>
+                </div>
+                
+                <!-- Book Card 6 -->
+                <div class="book-card" data-categories="technology" data-title="the coding mindset" data-author="david chen">
+                    <div class="book-cover">
+                        <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR9bzaSLBXmS1_KEdm8HjTvcLEv6eBm5qkKtT5fu6E74vmK-jhZ" alt="Book Cover">
+                        <span class="book-badge">Free</span>
+                    </div>
+                    <div class="book-details">
+                        <h2 class="book-title">War and Peace</h2>
+                        <p class="book-author">By Leo Tolstoy.</p>
+                        <p class="book-description">Set during the Napoleonic Wars, the work comprises both a fictional narrative and...</p>
+                        <div class="book-meta">
+                            <div class="book-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <span></span>
+                            </div>
+                            <div class="book-pages">
+                                <i class="fas fa-file"></i> 420 pages
+                            </div>
+                        </div>
+                        <a href="#" class="download-btn"><i class="fas fa-download"></i> Download PDF</a>
+                    </div>
+                </div>
+
+                <!-- Book Card 7 -->
+                <div class="book-card" data-categories="fiction psychology" data-title="the creative mind" data-author="james peterson">
+                    <div class="book-cover">
+                        <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRDXcTIGUBMQmsGJ0BtjFk0lDtCypDFEyEIJZxaO9-LXGosXBtX" alt="Book Cover">
+                        <span class="book-badge">Bestseller</span>
+                    </div>
+                    <div class="book-details">
+                        <h2 class="book-title">Wuthering Heights</h2>
+                        <p class="book-author">By Emily Bronte.</p>
+                        <p class="book-description">Wuthering Heights is the only novel by the English author Emily Brontë, initially...</p>
+                        <div class="book-meta">
+                            <div class="book-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span></span>
+                            </div>
+                            <div class="book-pages">
+                                <i class="fas fa-file"></i> 320 pages
+                            </div>
+                        </div>
+                        <a href="#" class="download-btn"><i class="fas fa-download"></i> Download PDF</a>
+                    </div>
+                </div>
+                
+                <!-- Book Card 8 -->
+                <div class="book-card" data-categories="sci-fi technology" data-title="the science of everything" data-author="emily roberts">
+                    <div class="book-cover">
+                        <img src="https://m.media-amazon.com/images/I/71z-a9gKZ4L._UF1000,1000_QL80_.jpg" alt="Book Cover">
+                        <span class="book-badge">New</span>
+                    </div>
+                    <div class="book-details">
+                        <h2 class="book-title">Anna Karenina</h2>
+                        <p class="book-author">By Leo Tolstoy.</p>
+                        <p class="book-description">Tolstoy called it his first true novel. It was initially released in serial installments...</p>
+                        <div class="book-meta">
+                            <div class="book-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span></span>
+                            </div>
+                            <div class="book-pages">
+                                <i class="fas fa-file"></i> 450 pages
+                            </div>
+                        </div>
+                        <a href="#" class="download-btn"><i class="fas fa-download"></i> Download PDF</a>
+                    </div>
+                </div>
+                
+                <!-- Book Card 9 -->
+                <div class="book-card" data-categories="business" data-title="business strategy" data-author="michael johnson">
+                    <div class="book-cover">
+                        <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTlt9G-RrRqT-xmDmcW28hmK8T2TqhzUs8NsRNnymp63AnEAuJz" alt="Book Cover">
+                    </div>
+                    <div class="book-details">
+                        <h2 class="book-title">Catcher in the Rye</h2>
+                        <p class="book-author">By  J. D. Salinger.</p>
+                        <p class="book-description">It was partially published in serial form in 1945-46 before being novelized in 1951...</p>
+                        <div class="book-meta">
+                            <div class="book-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <span></span>
+                            </div>
+                            <div class="book-pages">
+                                <i class="fas fa-file"></i> 380 pages
+                            </div>
+                        </div>
+                        <a href="#" class="download-btn"><i class="fas fa-download"></i> Download PDF</a>
+                    </div>
+                </div>
+                
+                <!-- Book Card 10 -->
+                <div class="book-card" data-categories="fiction" data-title="art of photography" data-author="sarah williams">
+                    <div class="book-cover">
+                        <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ_inH-zo5ra09a0QzLvNrE_TI8rUr9vKP9cHpUu3qBc3zg-2JU" alt="Book Cover">
+                    </div>
+                    <div class="book-details">
+                        <h2 class="book-title">Moby Dick</h2>
+                        <p class="book-author">By Herman Melville.</p>
+                        <p class="book-description">The book is centered on the sailor Ishmael's narrative of the maniacal quest ofAhab,cap...</p>
+                        <div class="book-meta">
+                            <div class="book-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span></span>
+                            </div>
+                            <div class="book-pages">
+                                <i class="fas fa-file"></i> 280 pages
+                            </div>
+                        </div>
+                        <a href="#" class="download-btn"><i class="fas fa-download"></i> Download PDF</a>
+                    </div>
+                </div>
+                
+                <!-- Book Card 11 -->
+                <div class="book-card" data-categories="psychology" data-title="healthy lifestyle" data-author="rachel green">
+                    <div class="book-cover">
+                        <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR1tXph6SVIgQBULTiQzm3ITCpVIq2W3rLUxHFrSbErsWhznkI1" alt="Book Cover">
+                        <span class="book-badge">Popular</span>
+                    </div>
+                    <div class="book-details">
+                        <h2 class="book-title">Don Quixote</h2>
+                        <p class="book-author">By Miguel Cervantes.</p>
+                        <p class="book-description">Originally published in two parts in 1605 and 1615, the novel is considered a founding work...</p>
+                        <div class="book-meta">
+                            <div class="book-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span></span>
+                            </div>
+                            <div class="book-pages">
+                                <i class="fas fa-file"></i> 350 pages
+                            </div>
+                        </div>
+                        <a href="#" class="download-btn"><i class="fas fa-download"></i> Download PDF</a>
+                    </div>
+                </div>
+                
+                <!-- Book Card 12 -->
+                <div class="book-card" data-categories="technology" data-title="the coding mindset" data-author="david chen">
+                    <div class="book-cover">
+                        <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSHUKOaL8fi_SYf2n6wlUkTHV50ClnA5l23VX8niQ8g-LKlTy6w" alt="Book Cover">
+                        <span class="book-badge">Free</span>
+                    </div>
+                    <div class="book-details">
+                        <h2 class="book-title">Binti an Africanfuturist</h2>
+                        <p class="book-author">By Nnedi Okorafor</p>
+                        <p class="book-description">The novella was published in 2015.  Binti is the first novella in Okorafor's Binti novella series...</p>
+                        <div class="book-meta">
+                            <div class="book-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <span></span>
+                            </div>
+                            <div class="book-pages">
+                                <i class="fas fa-file"></i> 420 pages
+                            </div>
+                        </div>
+                        <a href="#" class="download-btn"><i class="fas fa-download"></i> Download PDF</a>
+                    </div>
+                </div>
+
+                <!-- Book Card 13 -->
+                <div class="book-card" data-categories="fiction psychology" data-title="the creative mind" data-author="james peterson">
+                    <div class="book-cover">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQv3s4Kn59PChzNnKOQPQUSm01cSgchP4TxI2s9qWKy23FO4Uz5l7QPUh7adKRTpZxR1PY&usqp=CAU" alt="Book Cover">
+                        <span class="book-badge">Bestseller</span>
+                    </div>
+                    <div class="book-details">
+                        <h2 class="book-title">Jurassic Park</h2>
+                        <p class="book-author">By Michael Crichton</p>
+                        <p class="book-description">mutated into the mega media franchise “Jurassic World”, Jurassic Park was a smart, thoughtful and...</p>
+                        <div class="book-meta">
+                            <div class="book-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span></span>
+                            </div>
+                            <div class="book-pages">
+                                <i class="fas fa-file"></i> 320 pages
+                            </div>
+                        </div>
+                        <a href="#" class="download-btn"><i class="fas fa-download"></i> Download PDF</a>
+                    </div>
+                </div>
+                
+                <!-- Book Card 14 -->
+                <div class="book-card" data-categories="sci-fi technology" data-title="the science of everything" data-author="emily roberts">
+                    <div class="book-cover">
+                        <img src="https://i.pinimg.com/236x/5f/8c/8d/5f8c8dff95afa8c9fb13d53a2e54f95a.jpg" alt="Book Cover">
+                        <span class="book-badge">New</span>
+                    </div>
+                    <div class="book-details">
+                        <h2 class="book-title">The Hunger Games</h2>
+                        <p class="book-author">By Suzanne Collins</p>
+                        <p class="book-description">District 12 Tribute Katniss Everdeen (Jennifer Lawrence) has little to rely on, other than her...</p>
+                        <div class="book-meta">
+                            <div class="book-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span></span>
+                            </div>
+                            <div class="book-pages">
+                                <i class="fas fa-file"></i> 450 pages
+                            </div>
+                        </div>
+                        <a href="#" class="download-btn"><i class="fas fa-download"></i> Download PDF</a>
+                    </div>
+                </div>
+                
+                <!-- Book Card 15 -->
+                <div class="book-card" data-categories="business" data-title="business strategy" data-author="michael johnson">
+                    <div class="book-cover">
+                        <img src="https://d202m5krfqbpi5.cloudfront.net/books/1361098973l/345627.jpg" alt="Book Cover">
+                    </div>
+                    <div class="book-details">
+                        <h2 class="book-title">A Clockwork Orange</h2>
+                        <p class="book-author">By Anthony Burgess.</p>
+                        <p class="book-description">A dystopian satirical black comedy novel by English writer Anthony Burgess, published on March 17...</p>
+                        <div class="book-meta">
+                            <div class="book-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <span></span>
+                            </div>
+                            <div class="book-pages">
+                                <i class="fas fa-file"></i> 380 pages
+                            </div>
+                        </div>
+                        <a href="#" class="download-btn"><i class="fas fa-download"></i> Download PDF</a>
+                    </div>
+                </div>
+                
+                <!-- Book Card 16 -->
+                <div class="book-card" data-categories="fiction" data-title="art of photography" data-author="sarah williams">
+                    <div class="book-cover">
+                        <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQcUQojGVBpaQhz5VhrSltinVAbdFEEvOtpx27qLWVfNFMgWgMI" alt="Book Cover">
+                    </div>
+                    <div class="book-details">
+                        <h2 class="book-title">1984</h2>
+                        <p class="book-author">By George Orwell</p>
+                        <p class="book-description">. It was published on 8 June 1949 by Secker & Warburg as Orwell's ninth and final completed book...</p>
+                        <div class="book-meta">
+                            <div class="book-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span></span>
+                            </div>
+                            <div class="book-pages">
+                                <i class="fas fa-file"></i> 280 pages
+                            </div>
+                        </div>
+                        <a href="#" class="download-btn"><i class="fas fa-download"></i> Download PDF</a>
+                    </div>
+                </div>
+                
+                <!-- Book Card 17 -->
+                <div class="book-card" data-categories="psychology" data-title="healthy lifestyle" data-author="rachel green">
+                    <div class="book-cover">
+                        <img src="https://cdn.mos.cms.futurecdn.net/797b968af65b8d6892dbfd5bf6759d09-1200-80.jpg" alt="Book Cover">
+                        <span class="book-badge">Popular</span>
+                    </div>
+                    <div class="book-details">
+                        <h2 class="book-title">The Godfather</h2>
+                        <p class="book-author">By Mario Puzo.</p>
+                        <p class="book-description">Sons the novel details the story of a fictional Mafia family in New York City and Long Island headed...</p>
+                        <div class="book-meta">
+                            <div class="book-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span></span>
+                            </div>
+                            <div class="book-pages">
+                                <i class="fas fa-file"></i> 350 pages
+                            </div>
+                        </div>
+                        <a href="#" class="download-btn"><i class="fas fa-download"></i> Download PDF</a>
+                    </div>
+                </div>
+                
+                <!-- Book Card 18 -->
+                <div class="book-card" data-categories="technology" data-title="the coding mindset" data-author="david chen">
+                    <div class="book-cover">
+                        <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQsVIOvQ9jwZon2DZTmJQ6GpTZRccGG_Nrc0vYiog-gYm7f6Pif" alt="Book Cover">
+                        <span class="book-badge">Free</span>
+                    </div>
+                    <div class="book-details">
+                        <h2 class="book-title">Twilight</h2>
+                        <p class="book-author">By Stephenie Meyer</p>
+                        <p class="book-description">High-school student Bella Swan, always a bit of a misfit, doesn't expect life to change much when...</p>
+                        <div class="book-meta">
+                            <div class="book-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <span></span>
+                            </div>
+                            <div class="book-pages">
+                                <i class="fas fa-file"></i> 420 pages
+                            </div>
+                        </div>
+                        <a href="#" class="download-btn"><i class="fas fa-download"></i> Download PDF</a>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+                <div class="dictionary-wrapper">
+                <div class="dic">
+                    <h1>Dictionary App</h1>
+                    <p class="tagline">Unlock the power of words with this simple and smart dictionary.</p>
+                    <form action="">
+                    <input type="text" placeholder="Enter a word here...">
+                    <button type="submit">Search</button>
+                    </form>
+                    <div class="result"></div>
+                </div>
+                </div>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About ZeesuLib</h3>
+                <p>ZeesuLib is a premium platform for book lovers to discover and download their favorite books in PDF format. We offer a wide range of categories to explore.</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/zeesu_royalist/" target="blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/mohammad-jishan-4361972ba/" target="blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.facebook.com/p/Zeesu-Royalist-100064169071412/" target="blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://x.com/zeesuroyalist" target="blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.youtube.com/@zeesu_royalist" target="blank"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Other Websites</h3>
+                <ul class="footer-links">
+                    <li><a href="" target="blank">ZeesuXen AI</a></li>
+                    <li><a href="" target="blank">Zeesu Vision AI</a></li>
+                    <li><a href="" target="blank">Zeesu Verse</a></li>
+                    <li><a href="" target="blank">Zeesu Pixel</a></li>
+                    <li><a href="" target="blank">Zeesu News Cast</a></li>
+                    <li><a href="" target="blank">Zeesu WordTest</a></li>
+                    <li><a href="" target="blank">Zeesu ReTouch</a></li>
+                    <li><a href="" target="blank">Zeesu NoteWeb</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <ul class="footer-contact">
+                    <li><i class="fas fa-map-marker-alt"></i>I9-7 Kalka Ji, New Delhi.</li>
+                    <li><i class="fas fa-phone"></i> +91 9999730618</li>
+                    <li><i class="fas fa-envelope"></i> rzeesu@gmail.com</li>
+                    <li><i class="fas fa-clock"></i> Always on, Anytime</li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Newsletter</h3>
+                <p>Subscribe to our newsletter to get updates on new releases and special offers.</p>
+                <div class="newsletter">
+                    <br>
+                    <input type="email" placeholder="Your Email Address">
+                    <button>Subscribe</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <p>&copy; 2025 ZeesuLib. All rights reserved. | Designed by The Zeesu Royalist Company.</p>
+            <p style="margin-top:10px;font-style:italic;font-size:10px;color:#000000a2;">
+  Powered by The 
+  <a href="https://www.google.com/search?q=zeesu+royalist" style="text-decoration:none;color:#000000a2;">
+    Zeesu Royalist Company
+  </a>
+</p>
+        </div>
+    </footer>
+
+        
+<script src="script.js"></script> 
+</body>
+</html>
